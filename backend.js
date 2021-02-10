@@ -1,1 +1,1 @@
-export * from "automerge-backend-wasm-module"
+export * from "automerge-backend-wasm"
