@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "exports": {
-    ".": "index.js",
-    "frontend": "frontend.js",
-    "backend": "backend.js"
+    ".": "./index.js",
+    "./frontend": "./frontend.js",
+    "./backend": "./backend.js"
   },
   "scripts": {
     "start": "node --experimental-wasm-modules index.js",
