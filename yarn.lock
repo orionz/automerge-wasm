@@ -4,7 +4,7 @@
 
 automerge-backend-wasm-module@orionz/automerge-backend-wasm-module:
   version "0.1.0"
-  resolved "https://codeload.github.com/orionz/automerge-backend-wasm-module/tar.gz/1835e38efd18b2ee2ad3ccb04deb3b044c8bba82"
+  resolved "https://codeload.github.com/orionz/automerge-backend-wasm-module/tar.gz/38beb7f62d000c7184298b834e1fa953b70abc3d"
 
 automerge@orionz/automerge#dist:
   version "0.14.0"
