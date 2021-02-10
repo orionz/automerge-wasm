@@ -1,0 +1,22 @@
+{
+  "name": "automerge-wasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "index.js",
+    "frontend": "frontend.js",
+    "backend": "backend.js"
+  },
+  "scripts": {
+    "start": "node --experimental-wasm-modules index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "automerge": "orionz/automerge#dist",
+    "automerge-backend-wasm-module": "orionz/automerge-backend-wasm-module"
+  }
+}
