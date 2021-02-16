@@ -2,32 +2,46 @@
   "name": "automerge-wasm",
   "version": "0.1.1",
   "description": "automerge wasm",
-  "main": "index.js",
+  "main": "./cjs/index.js",
+  "module": "./mjs/index.js",
   "exports": {
-    ".": "./index.js",
-    "./mjs": "./index.mjs",
-    "./cjs": "./index.cjs"
+    ".": {
+      "require": "./cjs/index.js",
+      "default": "./mjs/index.js"
+    },
+    "./frontend": {
+      "require": "./cjs/frontend.js",
+      "default": "./mjs/frontend.js"
+    },
+    "./backend": {
+      "require": "./cjs/backend.js",
+      "default": "./mjs/backend.js"
+    }
   },
   "scripts": {
-    "mjs": "node --experimental-wasm-modules index.mjs",
-    "cjs": "node --experimental-wasm-modules index.cjs",
+    "mjs": "node --experimental-wasm-modules ./mjs/index.js",
+    "cjs": "node ./cjs/index.js",
     "basic": "node index.js",
+    "testcjs": "mocha test/cjs/*_test.js",
+    "testmjs": "mocha test/mjs/*_test.mjs --  --experimental-wasm-modules",
+    "test": "mocha test/mjs/*_test.mjs test/cjs/*_test.js --  --experimental-wasm-modules",
     "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "automerge": "orionz/automerge#dist",
-    "automerge-backend-wasm-module": "orionz/automerge-backend-wasm-module",
-    "automerge-backend-wasm-node": "orionz/automerge-backend-wasm-node"
+    "automerge-backend-wasm": "orionz/automerge-backend-wasm"
   },
   "devDependencies": {
     "@webpack-cli/init": "^1.1.3",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "browserify": "^17.0.0",
     "esmify": "^2.1.1",
+    "mocha": "^8.3.0",
     "snowpack": "^3.0.11",
     "snowpack-plugin-wasm-pack": "^1.0.0",
+    "sinon": "^9.0.1",
     "wasmify": "^4.0.0",
     "webpack": "^5.21.2",
     "webpack-cli": "^4.5.0",

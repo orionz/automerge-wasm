@@ -7,8 +7,10 @@ module.exports = {
   target: "node",
   output: {
           filename: 'index.js',
-          library: 'Automerge',
+          library: 'AutomergeWASM',
           path: path.resolve(__dirname, 'dist'),
+          libraryTarget: 'umd',
+          globalObject: 'this'
   },
   plugins: [],
   module: {
