@@ -1486,8 +1486,8 @@ atob@^2.1.2:
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
 automerge-backend-wasm@orionz/automerge-backend-wasm:
-  version "0.1.3"
-  resolved "https://codeload.github.com/orionz/automerge-backend-wasm/tar.gz/052b568de64423b6a161a2d9b13f0e04e6bf076f"
+  version "0.1.4"
+  resolved "https://codeload.github.com/orionz/automerge-backend-wasm/tar.gz/556ac95b4ef1f38aed66b8cba4178a2d0ab3ec48"
 
 automerge@orionz/automerge#dist:
   version "0.14.0"
@@ -2512,9 +2512,9 @@ ejs@^3.1.5:
     jake "^10.6.1"
 
 electron-to-chromium@^1.3.649:
-  version "1.3.665"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.665.tgz#6d0937376f6a919c0f289202c4be77790a6175e5"
-  integrity sha512-LIjx1JheOz7LM8DMEQ2tPnbBzJ4nVG1MKutsbEMLnJfwfVdPIsyagqfLp56bOWhdBrYGXWHaTayYkllIU2TauA==
+  version "1.3.666"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.666.tgz#59f3ce1e45b860a0ebe439b72664354efbb8bc62"
+  integrity sha512-/mP4HFQ0fKIX4sXltG6kfcoGrfNDZwCIyWbH2SIcVaa9u7Rm0HKjambiHNg5OEruicTl9s1EwbERLwxZwk19aw==
 
 elliptic@^6.5.3:
   version "6.5.4"
