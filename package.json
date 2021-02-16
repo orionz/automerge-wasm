@@ -1,6 +1,6 @@
 {
   "name": "automerge-wasm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "automerge wasm",
   "main": "./cjs/index.js",
   "module": "./mjs/index.js",
